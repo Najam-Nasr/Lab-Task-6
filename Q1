@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int user_input, sum = 0;  
+    
+    do {
+        printf("Enter a number (0 to stop): ");
+        scanf("%d", &user_input);  
+        
+        if (user_input != 0) {  
+            sum += user_input;  
+            printf("Current sum: %d\n", sum);  
+        }
+    } while (user_input != 0); 
+    
+    printf("Final sum: %d\n", sum);  
+    return 0;
+}
