@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main() 
+{
+    int num,sum,total;
+    
+	printf("Enter a Number: ");
+    scanf("%d",&num);
+    
+    while(num!=0)
+    {
+    	int a=num%10;
+    	int cubea=a*a*a;
+    	int b=num/10;
+    	int e=b%10;
+    	int cubeb=e*e*e;
+    	int c=b/10;
+    	int cubec=c*c*c;
+    	sum=cubea+cubeb+cubec;
+    	if(sum==num)
+    	{
+    		printf("It is armstrong number");
+		}
+		else
+		{
+			printf("It is not armstrong");
+		}
+    break;
+	}
+	return 0;
+}
